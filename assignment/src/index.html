@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireGo - Landing Page</title>
+
+    <!-- Link of CSS files -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js"></script>
+</head>
+
+<body class="font-inter bg-white">
+
+    <!-- Header Section Start-->
+    <header class="navbar-area">
+        <div class="container mx-auto px-2 md:px-0">
+            <div class="grid grid-cols-1 xl:grid-cols-[55%_repeat(1,_1fr)] items-center py-4">
+                <div class="">
+                    <nav class="flex justify-between xl:justify-start items-center relative">
+                        <a href="index.html" class="logo mr-[27px]"><img src="assets/img/logo.png" alt="Logo"></a>
+                        <div class="hidden xl:flex gap-16">
+                            <ul class="nav-menu">
+                                <li class="inline-block relative pr-[22px] mr-[15px]">
+                                    <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em] hover:opacity-60" href="#">
+                                      Products
+                                      <img class="absolute top-[9px] right-0" src="assets/img/icons/down-arrow.svg" alt="Image">
+                                    </a>
+                                </li>
+                                <li class="inline-block relative pr-[22px] mr-[15px]">
+                                    <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em]  hover:opacity-60" href="#">
+                                      Solutions
+                                      <img class="absolute top-[9px] right-0" src="assets/img/icons/down-arrow.svg" alt="Image">
+                                    </a>
+                                </li>
+                                <li class="inline-block relative pr-[22px] mr-[15px]">
+                                    <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em]  hover:opacity-60" href="#">
+                                        Why HireGo
+                                      <img class="absolute top-[9px] right-0" src="assets/img/icons/down-arrow.svg" alt="Image">
+                                    </a>
+                                </li>
+                                <li class="inline-block relative pr-[22px] mr-[15px]">
+                                    <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em]  hover:opacity-60" href="#">
+                                      Pricings
+                                    </a>
+                                </li>
+                                <li class="inline-block relative pr-[22px] mr-[15px]">
+                                    <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em]  hover:opacity-60" href="#">
+                                        Resources
+                                      <img class="absolute top-[9px] right-0" src="assets/img/icons/down-arrow.svg" alt="Image">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <button id="menu_btn" class="w-10 inline-block xl:hidden">
+                            <img src="assets/img/icons/mobile-menu.svg" alt="Icon" class="ms-auto">
+                        </button>
+                        <!-- mobile menu -->
+                        <div id="mobile_menu" class="absolute top-[40px] bg-gray-100 left-0 w-full hidden transition duration-400">
+                            <div class="flex flex-col gap-10 p-5 xl:hidden">
+                                <ul class="nav-menu flex flex-col gap-2">
+                                    <li class="block w-100 relative pr-[22px] mr-[15px] mb-[10px]">
+                                        <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em] hover:opacity-60" href="#">
+                                          Products
+                                          <img class="absolute top-[9px] right-0" src="assets/img/icons/down-arrow.svg" alt="Image">
+                                        </a>
+                                    </li>
+                                    <li class="block w-100 relative pr-[22px] mr-[15px] mb-[10px]">
+                                        <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em]  hover:opacity-60" href="#">
+                                          Solutions
+                                          <img class="absolute top-[9px] right-0" src="assets/img/icons/down-arrow.svg" alt="Image">
+                                        </a>
+                                    </li>
+                                    <li class="block w-100 relative pr-[22px] mr-[15px] mb-[10px]">
+                                        <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em]  hover:opacity-60" href="#">
+                                            Why HireGo
+                                          <img class="absolute top-[9px] right-0" src="assets/img/icons/down-arrow.svg" alt="Image">
+                                        </a>
+                                    </li>
+                                    <li class="block w-100 relative pr-[22px] mr-[15px] mb-[10px]">
+                                        <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em]  hover:opacity-60" href="#">
+                                          Pricings
+                                        </a>
+                                    </li>
+                                    <li class="block w-100 relative pr-[22px] mr-[15px] mb-[10px]">
+                                        <a class="text-[16px] font-semibold text-[#141414] transition duration-400 tracking[-0.03em]  hover:opacity-60" href="#">
+                                            Resources
+                                          <img class="absolute top-[9px] right-0" src="assets/img/icons/down-arrow.svg" alt="Image">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="col-span-1 hidden xl:flex justify-end">
+                    <div class="other-options flex justify-end items-center">
+                        <div class="relative pl-[45px] pr-[22px] py-2 border border-gray-300 rounded-full mr-3">
+                            <img class="absolute top-2 left-4" src="assets/img/icons/globe-2.svg" alt="Language Icon">
+                            <select class="text-base font-medium bg-transparent pr-1">
+                                <option>English</option>
+                                <option>French</option>
+                            </select>
+                          </div>
+                        <a href="#" class="bg-[#fff] text-[#262626] inline-block rounded-full py-[7px] px-7 font-ibm font-medium transition duration-400 border border-[#D6D6D6] hover:bg-[#444] hover:border-0 hover:text-[#fff] mr-3">Login</a>
+                        <a href="#"  class="bg-[#262626] text-white inline-block rounded-full py-2 px-4 font-ibm font-medium transition duration-400 hover:bg-[#444]">Request a demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section End -->
+
+    <!-- Hero Section Start -->
+    <div class="hero-area bg-[#B1D8FC] rounded-bl-[64px] pt-[80px] xl:pt-[128px] pl-[15px] xl:pl-[80px]">
+        <div class="grid grid-cols-1 md:grid-cols-2">
+            <div class="hero-content pb-7">
+                <h1 class="text-[#262626] text-[32px] lg:text-[56px] font-ibm font-bold leading-[38px] lg:leading-[72px] mb-[25px]">HireGO is your <br> all-in-one <br> Global People Platform</h1>
+                <ul class="mb-[27px]">
+                    <li class="relative pl-[33px] mb-[7px] text-[18px] tracking-[-0.04em]">
+                        <img class="absolute top-[2px] left-0" src="assets/img/icons/check-yellow.svg" alt="Description">
+                        G3's Leader in global employment platforms
+                    </li>
+                    <li class="relative pl-[33px] mb-[7px] text-[18px] tracking-[-0.04em]">
+                        <img class="absolute top-[2px] left-0" src="assets/img/icons/check-yellow.svg" alt="Description">
+                        90% customer satisfaction rate
+                    </li>
+                </ul>
+                <a href="#" class="flex flex-col justify-center px-6 py-3 mt-3 max-w-full font-medium tracking-tighter leading-none bg-[#262626] border-0 rounded-[999px] w-[203px] max-md:px-5 hover:bg-[#444444] transition duration-400">
+                    <span class="flex gap-2 items-start w-full">
+                        <span class="text-lg font-semibold font-ibm text-white">Request a demo</span>
+                        <img
+                            loading="lazy"
+                            src="assets/img/icons/right-arrow-white.svg"
+                            alt="Icon"
+                            class="relative top-2"
+                        />
+                    </span>
+                </a>
+            </div>
+            <div class="hero-img-wrap relative rounded-tl-[64px]">
+                <img src="assets/img/hero/hero-1.png" alt="Image" class="hero-img ms-auto w-full  rounded-tl-[64px]">
+                <div class="absolute text-[14px] md:text-[20px] xl:text-2xl top-6 right-20 bg-yellow-400 rounded-[18px] inline-block py-2 px-5">
+                    Expand your team and hire globally
+                  <img class="absolute bottom-0 right-[-9px]" src="assets/img/hero/curve-1.png" alt="Your Image">
+                </div>
+                <div class="absolute text-white text-[14px] md:text-[20px] xl:text-2xl top-[90px] left-[-40px] bg-[#37D15D] rounded-[18px] inline-block py-2 px-5">
+                    Immigration support
+                  <img class="absolute bottom-[-1px] left-[-9px]" src="assets/img/hero/curve-2.png" alt="Your Image">
+                </div>
+                <div class="absolute text-white text-[14px] md:text-[20px] xl:text-2xl top-[160px] right-20 bg-[#9149ED] rounded-[18px] inline-block py-2 px-5">
+                   Set your team up
+                  <img class="absolute bottom-[-1px] right-[-9px]" src="assets/img/hero/curve-3.png" alt="Your Image">
+                </div>
+                <div class="absolute text-white text-[14px] md:text-[20px] xl:text-2xl bottom-[150px] left-[-40px] bg-[#2E9DFB] rounded-[18px] inline-block py-2 px-5">
+                    Pay anyone, anywhere in minutes
+                  <img class="absolute bottom-0 left-[-9px]" src="assets/img/hero/curve-4.png" alt="Your Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hero Section End -->
+
+    <!-- Partner Section Start -->
+    <div class="container mx-auto pt-[80px] pb-[50px] px-2 md:px-0">
+        <h2 class="text-[#8C8C8C] text-[28px] md:text-[56px] text-center lg:max-w-screen-xl mx-auto  font-sans font-semibold leading-[38px] md:leading-[68px] mb-[32px] md:mb-[50px]">Trusted by <span class="text-[#262626]">25,000+</span> companies from <br> startups to enterprise.</h2>
+        <div class="mt-8 grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-7 gap-6 items-center relative  before:absolute before:top-0 before:left-0 before:content-[''] before:w-[100px] before:h-full before:z-10" 
+        style="--tw-gradient-to: rgba(255, 255, 255, 0.48);
+           --tw-gradient-from: rgba(255, 255, 255, 1); 
+           background-image: linear-gradient(-90deg, var(--tw-gradient-from) 100%, var(--tw-gradient-to) 100%);">
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/shopify.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/klarna.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/reddit.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/nike.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/zapier.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/nu.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/felly_belly.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/revolut.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/forever_21.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/redbull.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/clavin_klein.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/intercom.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/hermes.png" alt="Brand" class="block mx-auto">
+            </div>
+            <div class="partner-logo mb-[14px] lg:mb-[50px]">
+                <img src="assets/img/brand/hello_fresh.png" alt="Brand" class="block mx-auto">
+            </div>
+        </div>
+
+        
+    </div>
+    <!-- Partner Section End -->
+
+    <!-- Hire Section Start -->
+    <div class="bg-[#323232] rounded-[64px] py-24">
+        <div class="container mx-auto px-2 md:px-0">
+            <div class="flex flex-col items-center w-full">
+                <h2 class="text-6xl font-semibold tracking-tighter text-center text-white leading-[66px] w-[693px] max-md:max-w-full max-md:text-4xl max-md:leading-[51px]">
+                    You can do it all.
+                    <br />
+                    With HireGO.
+                </h2>
+                <div class="flex flex-wrap gap-6 justify-center mt-12 w-full max-md:mt-10">
+                    <div class="flex flex-col flex-1 shrink self-start p-8 md:p-12 rounded-3xl basis-0 bg-white bg-opacity-10 min-w-[240px] max-md:px-5 max-md:max-w-full" tabindex="0">
+                        <div class="flex flex-col w-full max-md:max-w-full">
+                            <h2 class="text-[32px] lg:text-[40px] font-ibm font-semibold tracking-[-0.04em] leading-[32px] lg:leading-[48px] text-white max-md:max-w-full">
+                                Hire international talent
+                            </h2>
+                            <p class="mt-4 text-lg tracking-[-0.04em] leading-6 text-[#BFBFBF] max-md:max-w-full">
+                                Instead of setting up your own entities, experience the speed of
+                                HireGO's automated global hiring. Create compliant employment
+                                agreements and set up payroll and benefits—in a matter of clicks.
+                            </p>
+                        </div>
+                        <a href="#" class="flex flex-col justify-center px-6 py-3 mt-8 max-w-full text-lg font-semibold tracking-tighter leading-none bg-white rounded-[999px] text-[#262626] w-[261px] max-md:px-5">
+                            <span class="flex gap-2 items-start w-full">
+                                <span>Hire international talent</span>
+                                <img loading="lazy" src="assets/img/icons/right-arrow-long.svg" alt="Icon"  class="relative top-1">
+                            </span>
+                        </a>
+                        <img loading="lazy" src="assets/img/feature/service.jpg" class="object-contain mt-8 max-w-full rounded-3xl w-full" alt="Image">
+                    </div>
+                    <div class="flex flex-col flex-1 shrink text-lg tracking-tighter basis-24 min-w-[240px] max-md:max-w-full">
+                        <div class="flex flex-col p-8 md:p-12 w-full rounded-3xl bg-[#3A5C45] max-md:px-5 max-md:max-w-full" tabindex="0">
+                            <h2 class="text-[32px] lg:text-[40px] font-ibm font-semibold tracking-[-0.04em] leading-[32px] lg:leading-[48px] text-white max-md:max-w-full">
+                                Hire contractors
+                            </h2>
+                            <p class="mt-4 text-lg  leading-6 text-white text-opacity-70 max-md:max-w-full">
+                                Generate, edit, and sign compliant contracts in minutes and access
+                                management tools to streamline paperwork, onboarding, and payments.
+                            </p>
+                            <a href="#" class="flex flex-col justify-center px-6 py-3 mt-8 max-w-full text-lg font-semibold tracking-tighter leading-none bg-white rounded-[999px] text-[#262626] w-[204px] max-md:px-5">
+                                <span class="flex gap-2 items-start w-full">
+                                    <span>Hire contractors</span>
+                                    <img loading="lazy" src="assets/img/icons/right-arrow-long.svg" alt="Icon"  class="relative top-1">
+                                </span>
+                            </a>
+                        </div>
+                        <div class="flex flex-col flex-1 p-8 md:p-12 mt-6 w-full bg-blue-200 rounded-3xl text-black text-opacity-80 max-md:px-5 max-md:max-w-full" tabindex="0">
+                            <h2 class="text-[32px] lg:text-[40px] font-ibm font-semibold tracking-[-0.04em] leading-[32px] lg:leading-[48px] text-[#262626] max-md:max-w-full">
+                                Convert contractors to employees
+                            </h2>
+                            <p class="mt-4 leading-6 text-black text-opacity-70 max-md:max-w-full">
+                                Assess global worker misclassification risks and compliantly convert
+                                contractors to full-timers, all under one platform.
+                            </p>
+                            <a href="#" class="flex flex-col justify-center px-6 py-3 mt-10 max-w-full text-lg font-semibold tracking-tighter leading-none bg-white rounded-[999px] text-[#262626] w-[220px] max-md:px-5">
+                                <span class="flex gap-2 items-start w-full">
+                                    <span>Convert contractors</span>
+                                    <img loading="lazy" src="assets/img/icons/right-arrow-long.svg" alt="Icon"  class="relative top-1">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col justify-center items-center pt-8 pb-2 md:py-20" role="separator">
+                <div class="w-full border border-solid border-white border-opacity-20 min-h-[1px]"></div>
+            </div>
+            <div class="flex flex-wrap gap-4 justify-center items-start" role="list">
+                <div class="flex flex-col flex-1 shrink p-6 basis-0 min-w-[240px] max-md:px-5" role="listitem">
+                    <h4 class="text-[64px] md:text-[80px] font-ibm font-semibold tracking-tighter leading-none text-blue-200 max-md:text-4xl">
+                        5,000+
+                    </h4>
+                    <div class="mt-4 text-lg tracking-wide text-white">
+                        Loved by 5,000+ Team Members
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 shrink p-6 basis-0 min-w-[240px] max-md:px-5" role="listitem">
+                    <h4 class="text-[64px] md:text-[80px] font-ibm font-semibold tracking-tighter leading-none text-blue-200 max-md:text-4xl">
+                        25,000+
+                    </h4>
+                    <div class="mt-4 text-lg tracking-wide leading-none text-white">
+                        Trusted by 25,000+ customers
+                    </div>
+                </div>
+                <div class="flex flex-col flex-1 shrink p-6 basis-0 min-w-[240px] max-md:px-5" role="listitem">
+                    <h4 class="text-[64px] md:text-[80px] font-ibm font-semibold tracking-tighter leading-none text-blue-200 max-md:text-4xl">
+                        48 hrs
+                    </h4>
+                    <div class="mt-4 text-lg tracking-wide leading-none text-white">
+                        Onboard talent in as little as 48 hours
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Hire Section End -->
+
+    <!-- Performance Section Start -->
+    <div class="bg-[#F5F5F5] pt-[110px] pb-[50px]">
+        <div class="container mx-auto  px-2 md:px-0">
+            <h1 class="text-6xl font-semibold tracking-tighter text-center text-[#262626] leading-[69px] max-md:text-4xl max-md:leading-[51px] mb-[45px]">
+                Take your business
+                <br />
+                to the next level
+            </h1>
+        </div>
+        <div class="mx-auto pl-[15px] xl:pl-[80px] xxl:pl-[120px] pr-[15px] md:pr-[0px]">
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div class="flex flex-col self-stretch py-8 pr-8 my-auto ">
+                    <h2 class="text-4xl font-semibold tracking-tighter leading-10 text-orange-400 max-md:max-w-full">
+                        Culture and performance.
+                        <br />
+                        It's up and up.
+                    </h2>
+                    <div class="mt-6 tracking-tight leading-6 text-black text-opacity-50 max-md:max-w-full">
+                        Develop feedback loops, set KPIs and design custom performance
+                        reviews. Quickly build a positive performance culture for your
+                        business — where everyone is aiming for the same goals.
+                    </div>
+                    <a href="#" class="flex flex-col justify-center px-6 py-4 mt-3 max-w-full font-medium tracking-tighter leading-none bg-white border border-solid border-black border-opacity-70 rounded-[999px] w-[250px] max-md:px-5">
+                        <div class="flex gap-2 items-start w-full">
+                            <span>Performance Management</span>
+                            <img loading="lazy" src="assets/img/icons/right-arrow-long.svg" class="relative top-1">
+                        </div>
+                    </a>
+                </div>
+                <div class="performance-slider swiper w-full max-w-3xl mx-auto">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/feature/slider-1.jpg" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/feature/slider-2.jpg" alt="Image">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/feature/slider-1.jpg" alt="Image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 lg-grid-cols-2">
+                <div class="flex flex-wrap gap-4 items-center self-start mt-12 max-md:mt-10 max-md:max-w-full">
+                    <img loading="lazy" src="assets/img/feature/feature-2.jpg" class="object-contain self-stretch my-auto rounded-3xl aspect-square min-w-[240px] w-[592px] max-md:max-w-full" alt="Payroll software interface demonstration" />
+                    <div class="flex flex-col self-stretch py-8 pl-8 my-auto min-w-[240px] w-[592px] max-md:max-w-full">
+                        <h2 class="text-4xl font-semibold tracking-tighter leading-10 text-violet-500 max-md:max-w-full">
+                            It's payroll software.
+                            <br />
+                            Just faster.
+                        </h2>
+                        <p class="mt-6 tracking-tight leading-6 text-black text-opacity-50 max-md:max-w-full">
+                            Save your time, pay your people with automated payroll. Enjoy the
+                            benefits of Real Time Information (RTI) and take care of workforce
+                            planning - all in one simple place.
+                        </p>
+                        <a href="#" class="flex flex-col justify-center px-6 py-4 mt-3 max-w-full font-medium tracking-tighter leading-none bg-white border border-solid border-black border-opacity-70 rounded-[999px] w-[203px] max-md:px-5">
+                            <div class="flex gap-2 items-start w-full">
+                                <span>Payroll Features</span>
+                                <img loading="lazy" src="assets/img/icons/right-arrow-long.svg" class="relative top-1">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Performance Section End -->
+    
+    <!-- Simple Section Start -->
+    <div class="bg-white pt-[100px] md:pt-[105px] pb-[100px]">
+        <div class="container mx-auto px-2 md:px-0">
+            <h2 class="text-[32px] md:text-[56px] fnt-ibm font-semibold tracking-tighter text-center leading-[38px] md:leading-[72px] text-[#262626] mb-[50px]">
+                Get started with HireGo
+                <br />
+                in three easy steps.
+            </h2>
+            <div class="grid grid-cols-1 gap-4 lg:grid-cols-2">
+                <div>
+                    <img loading="lazy" src="assets/img/feature/feature-1.jpg" alt="Illustration" class=" rounded-[32px] w-full" />
+                </div>
+                <div class="flex flex-col">
+                    <div class="flex flex-wrap gap-4 items-start px-10 py-8 max-w-full bg-neutral-100 rounded-[32px]max-md:px-5">
+                        <div class="flex flex-col items-center w-10 text-2xl font-semibold tracking-tighter leading-none text-white whitespace-nowrap">
+                            <div class="w-10 h-10 bg-violet-500 rounded-[999px] flex flex-col items-center justify-center">1</div>
+                        </div>
+                        <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                            <h3 class="text-3xl font-semibold tracking-tighter leading-none text-black text-opacity-80 max-md:max-w-full">
+                                Book a call
+                            </h3>
+                            <p class="mt-4 text-[18px] tracking-tight leading-[24px] text-[#262626] max-md:max-w-full">
+                                Book a call with our global workforce consultants. We'll set you up with a free account ready to suit your team's needs.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4 items-start px-10 py-8 mt-2 max-w-full bg-neutral-100 rounded-[32px] max-md:px-5">
+                        <div class="flex flex-col items-center w-10 text-2xl font-semibold tracking-tighter leading-none text-white whitespace-nowrap">
+                            <div class="w-10 h-10 bg-violet-500 rounded-[999px] flex flex-col items-center justify-center">2</div>
+                        </div>
+                        <div class="flex flex-col flex-1 shrink basis-0 min-w-[240px] max-md:max-w-full">
+                            <h3 class="text-3xl font-semibold tracking-tighter leading-none text-black text-opacity-80 max-md:max-w-full">
+                                Add your people
+                            </h3>
+                            <p class="mt-4 text-[18px] tracking-tight leading-[24px] text-[#262626] max-md:max-w-full">
+                                From new hires to your existing workforce, onboard effortlessly with our self-serve platform.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex flex-wrap gap-4 items-start px-10 py-8 mt-2 max-w-full bg-neutral-100 rounded-[32px] max-md:px-5">
+                        <div class="flex flex-col items-center w-10 text-2xl font-semibold tracking-tighter leading-none text-white whitespace-nowrap">
+                            <div class="w-10 h-10 bg-violet-500 rounded-[999px] flex flex-col items-center justify-center">3</div>
+                        </div>
+                        <div class="flex flex-col flex-1 shrink text-lg basis-0 min-w-[240px] text-black text-opacity-80 max-md:max-w-full">
+                            <h3 class="text-3xl font-semibold tracking-tighter leading-none max-md:max-w-full">
+                                Dedicated onboarding
+                            </h3>
+                            <p class="mt-4  mb-3 text-[18px] tracking-tight leading-[24px] text-[#262626] max-md:max-w-full">
+                                From navigating local laws to support for your team members, our dedicated team will help you get set up seamlessly.
+                            </p>
+                            <a href="#" class="flex flex-col justify-center px-6 py-4 mt-3 max-w-full font-medium tracking-tighter leading-none bg-white border border-solid border-black border-opacity-70 rounded-[999px] w-[157px] max-md:px-5">
+                                <div class="flex gap-2 items-start w-full">
+                                    <span>Start Now</span>
+                                    <img loading="lazy" src="assets/img/icons/right-arrow-long.svg" class="relative top-1">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Simple Section End -->
+
+    <!-- Call To Action Section Start -->
+    <section class="bg-[#1b1b1b] pt-[80px] md:pt-[110px] pb-[60px] md-pb-[80px]">
+        <div class="container mx-auto">
+            <h2 class="text-white text-[32px] md:text-[56px] text-center font-semibold font-custom leading-[38px] md:leading-[72px] mb-[30px] md:mb-[50px]">Work easy. <br> Grow further with HireGo.</h2>
+            <a href="#" class="flex flex-col justify-center px-6 py-3 mt-3 max-w-full font-medium tracking-tighter leading-none bg-white border-0 rounded-[999px] w-[203px] max-md:px-5 mx-auto" tabindex="0">
+                <span class="flex gap-2 items-start w-full">
+                    <span class="text-lg font-semibold font-sans">Request a demo</span>
+                    <img
+                        loading="lazy"
+                        src="assets/img/icons/right-arrow-black.svg"
+                        alt="Icon"
+                        class="relative top-2"
+                    />
+                </span>
+            </a>
+        </div>
+    </section>
+    <!-- Call To Action Section End -->
+
+    <!-- Footer Section Start-->
+    <footer class="bg-[#1b1b1b] ">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 lg:grid-cols-[40%_repeat(3,_1fr)] md:grid-cols-[45%_repeat(1,_1fr)] gap-4 pb-[80px] md:pb-[120px] border-t border-[#363636] pt-[80px] md:pt-[120px]">
+                <div>
+                    <h2 class="text-white text-3xl font-semibold mb-6 tracking-tight font-sans">HireGo</h2>
+                    <ul class="social-link">
+                        <li class="inline-block mr-4">
+                            <a class="p-2 flex flex-col items-center justify-center rounded-full w-10 h-10 bg-[#363636]" href="#">
+                                <img loading="lazy" src="assets/img/icons/x.svg" alt="Social Icon">
+                            </a>
+                        </li>
+                        <li class="inline-block mr-4">
+                            <a class="p-2 flex flex-col items-center justify-center rounded-full w-10 h-10 bg-[#363636]" href="#">
+                                <img loading="lazy" src="assets/img/icons/linkedin.svg" alt="Social Icon">
+                            </a>
+                        </li>
+                        <li class="inline-block mr-4">
+                            <a class="p-2 flex flex-col items-center justify-center rounded-full w-10 h-10 bg-[#363636]" href="#">
+                                <img loading="lazy" src="assets/img/icons/facebook.svg" alt="Social Icon">
+                            </a>
+                        </li>
+                        <li class="inline-block mr-4">
+                            <a class="p-2 flex flex-col items-center justify-center rounded-full w-10 h-10 bg-[#363636]" href="#">
+                                <img loading="lazy" src="assets/img/icons/instagram.svg" alt="Social Icon">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-sm font-medium mb-6">How it works</h4>
+                    <ul class="footer-menu">
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Hire Employees</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Hire Contractors</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Run Global Payroll</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">App Store</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Open API</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-sm font-medium mb-6">Solutions</h4>
+                    <ul class="footer-menu">
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Compliance</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Payments</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">For Finance Teams</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">For Legal Teams</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">For Hiring Managers</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Startup</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Enterprise</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white text-sm font-medium mb-6">Resources</h4>
+                    <ul class="footer-menu">
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">About</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Blog</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Support hub</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Global Hiring Guide</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Partner Program</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Affiliates</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Case Studies</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Careers</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Glossary</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Press</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Service Status</a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#" class="text-sm font-medium text-white/40 transition duration-300 hover:text-white">Worker Community</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="relative pl-6 pb-5">
+                <img class="absolute top-1 left-0" src="assets/img/icons/globe.svg" alt="Icon">
+                <select class="bg-transparent text-white text-sm cursor-pointer">
+                    <option class="bg-black">English</option>
+                    <option class="bg-black">French</option>
+                </select>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2 pt-7 pb-[80px] md:pb-[120px] border-t border-[#363636]">
+                <p class="text-xs font-normal text-[#FAF4EE] mb-3 lg:mb-0">&copy; Copyright 2024. All Rights Reserved.</p>
+                <ul class="footer-bottom-menu lg:text-right">
+                    <li class="block md:inline-block mr-3 mb-3 md:mb-0">
+                        <a class="text-xs font-normal text-white/40 hover:text-white" href="#">Privacy Policy</a>
+                    </li>
+                    <li class="block md:inline-block mr-3 mb-3 md:mb-0">
+                        <a class="text-xs font-normal text-white/40 hover:text-white" href="#">Terms of Service</a>
+                    </li>
+                    <li class="block md:inline-block mr-3 mb-3 md:mb-0">
+                        <a class="text-xs font-normal text-white/40 hover:text-white" href="#">Whistleblower Policy</a>
+                    </li>
+                    <li class="block md:inline-block mr-3 mb-3 md:mb-0">
+                        <a class="text-xs font-normal text-white/40 hover:text-white" href="#">Cookie policy</a>
+                    </li>
+                    <li class="block md:inline-block mb-3 md:mb-0">
+                        <a class="text-xs font-normal text-white/40 hover:text-white" href="#">Cookie settings</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section End-->
+    <script>
+        const menu_btn = document.getElementById('menu_btn')
+        const mobile_menu = document.getElementById('mobile_menu')
+        const menu_bars = document.getElementById('menu_bars')
+        const menu_close = document.getElementById('menu_close')
+
+        menu_btn.addEventListener('click', () => {
+        mobile_menu.classList.toggle('hidden')
+        menu_bars.classList.toggle('hidden')
+        menu_close.classList.toggle('hidden')
+        })
+
+    </script>
+    <script>
+        const swiper = new Swiper('.performance-slider', {
+          loop: true,
+          spaceBetween: 15,
+          breakpoints: {
+            0: {
+              slidesPerView: 2
+            },
+            992: {
+              slidesPerView: 1.35
+            },
+        },
+        });
+    </script>
+</body>
+
+</html>
